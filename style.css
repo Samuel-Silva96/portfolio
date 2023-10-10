@@ -140,17 +140,51 @@ body {
     border: 10px solid black;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 170px;
-    justify-content: space-between;
-    align-items: center;
+a {
+    text-decoration: none;
+    color: black;
 }
 
 
-nav {
-    display: flex;
-    max-width: 976px;
+.container {
+    margin: auto;
+    max-width: 1060px;
+}
 
+.box-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 140px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background: var(--cores-cor-1, rgba(0, 0, 0, 0.30));
+    padding: 0 15px;
+}
+
+.box-header__item {
+    font-size: 23px;
+}
+
+.box-header__item--projetos {
+    font-size: 40px;
+}
+
+
+
+.box-principal__subtitulo-bem-vindo {
+    font-size: 46.137px;
+}
+
+.box-principal__titulo-principal {
+    font-size: 74.973px;
+    font-weight: 700;
+    padding: 35px 0;
+}
+
+.box-principal__subtitulo-desenvolvedor {
+    color: #6A6A6A;
+    font-size: 22.76px;
+    font-weight: 400;
+    padding-bottom: 65px;
 }
