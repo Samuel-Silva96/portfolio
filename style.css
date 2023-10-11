@@ -1,7 +1,11 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
+v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
 
 html,
 body,
@@ -135,30 +139,48 @@ table {
 }
 
 body {
+    /* border: 10px solid black; */
+    color: #000;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+main {
     max-width: 1440px;
     margin: auto;
-    border: 10px solid black;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
+.subtitulos {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.paragrafos {
+    font-size: 23px;
+    text-align: left;
+}
 
 .container {
     margin: auto;
     max-width: 1060px;
+    padding: 0 15px;
 }
 
 .box-header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 140px;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
     background: var(--cores-cor-1, rgba(0, 0, 0, 0.30));
+    height: 60px;
     padding: 0 15px;
 }
 
@@ -166,25 +188,42 @@ a {
     font-size: 23px;
 }
 
-.box-header__item--projetos {
-    font-size: 40px;
+.box-conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 170px;
 }
 
-
-
-.box-principal__subtitulo-bem-vindo {
+.box-conteudo-principal__titulos--subtitulo-bem-vindo {
     font-size: 46.137px;
 }
 
-.box-principal__titulo-principal {
+.box-conteudo-principal__titulos--principal {
     font-size: 74.973px;
     font-weight: 700;
-    padding: 35px 0;
+    padding: 35px 0 15px 0;
 }
 
-.box-principal__subtitulo-desenvolvedor {
-    color: #6A6A6A;
+.box-conteudo-principal__titulos--desenvolvedor {
+    color: #4f4f4f;
     font-size: 22.76px;
-    font-weight: 400;
+    font-weight: 300;
     padding-bottom: 65px;
+}
+
+.box-conteudo-principal__titulos--redes-sociais {
+    display: flex;
+    flex-direction: row;
+    padding-top: 65px;
+}
+
+.box-conteudo-principal__titulos--redes-sociais li {
+    padding-right: 32px;
+}
+
+.box-sobre {
+    margin-bottom: 170px;
 }
