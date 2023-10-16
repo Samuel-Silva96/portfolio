@@ -170,9 +170,10 @@ li {
     padding-bottom: 50px;
 }
 
-.paragrafos {
+.box-sobre__paragrafo {
     font-size: 23px;
     text-align: left;
+    line-height: 150%;
 }
 
 .container {
@@ -366,8 +367,24 @@ li {
     border: #148C00 solid 1px;
 }
 
+.formulario__button--enviar:hover {
+    background-color: #148C00;
+    color: #ffffff;
+    cursor: pointer;
+    transition-delay: 0.2s;
+    transition-duration: 0.4s;
+}
+
 .formulario__button--limpar {
     border: #FF0000 solid 1px;
+}
+
+.formulario__button--limpar:hover {
+    background-color: #e30000;
+    color: #ffffff;
+    cursor: pointer;
+    transition-delay: 0.2s;
+    transition-duration: 0.4s;
 }
 
 footer {
