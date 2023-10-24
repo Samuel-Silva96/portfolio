@@ -11,13 +11,20 @@
 <body>
     <header class="box-header">
 
-        <a href="" class="box-header__item">Sobre mim</a>
-        <a href="" class="box-header__item">Tecnologia</a>
-        <a href="" class="box-header__item">Projetos</a>
-        <a href="" class="box-header__item">Experiência</a>
-        <a href="" class="box-header__item">Contatos</a>
+        <a href="" class="box-header__item ">Sobre mim</a>
+        <a href="" class="box-header__item ">Tecnologia</a>
+        <a href="" class="box-header__item ">Projetos</a>
+        <a href="" class="box-header__item ">Experiência</a>
+        <a href="" class="box-header__item ">Contatos</a>
 
-        <a>Dark Mode</a>
+        <div class="box-header__menu-mobile" onclick="ativarMenu()">
+            <img src="img/icone-menu.png" alt="">
+        </div>
+
+        <button class="box-header__dark-mode">
+            Dark Mode
+        </button>
+
     </header>
     <main>
         <section class="box-conteudo-principal container">
@@ -186,6 +193,9 @@
     <footer>
         <p>Desenvolvido por Samuel Silva</p>
     </footer>
+
+    <!--Javascript-->
+    <script src="animacoes.js"></script>
 </body>
 
 </html>

@@ -198,6 +198,36 @@ li {
     font-size: 23px;
 }
 
+.box-header__dark-mode {
+    height: 45px;
+    border-radius: 28px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.box-header__menu-mobile {
+    display: none;
+}
+
+@media (max-width:747px) {
+    .box-header__menu-mobile {
+        display: initial;
+    }
+
+    .box-header__item {
+        display: none;
+    }
+
+    .box-header__ativando-menu {
+        color: #148C00;
+        display: initial;
+    }
+
+}
+
+
+
+
 .box-conteudo-principal {
     display: flex;
     flex-direction: row;
