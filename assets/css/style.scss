@@ -1,8 +1,166 @@
 @import "reset.scss";
 @import "fonts.scss";
 
-h1 {
-    background-color: aqua;
-    font-family: 'Inter';
-    font-size: 100px;
+body {
+  background-color: #212121;
+  color: aliceblue;
+  margin: 2rem 0;
+  height: 100vh;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(81, 81, 81, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.2px);
+  -webkit-backdrop-filter: blur(15.2px);
+  border: 1px solid rgba(81, 81, 81, 0.12);
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #383b40;
+  padding: 10px 15px;
+  width: max-content;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+}
+
+.box-hero {
+  margin-bottom: 3rem;
+
+  .hero--perfil {
+    display: flex;
+    gap: 2rem;
+
+    img {
+      border-radius: 10px;
+    }
+
+    .perfil--texto {
+      h1 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        font-weight: 700;
+      }
+
+      span {
+        color: #b3b3b5;
+      }
+
+      h2 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-weight: 500;
+        margin: 0.5rem 0 1rem 0;
+        color: #92c5fd;
+        background-color: unset;
+        padding: 0;
+      }
+
+      p {
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.box-experience {
+  margin-bottom: 3rem;
+
+  h3 {
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+  h4,
+  span {
+    color: #92c5fd;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.15rem;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .poder360 {
+    margin: 1.5rem 0;
+  }
+
+  .title {
+    font-style: italic;
+    font-weight: 600;
+
+    li {
+      font-style: normal;
+    }
+  }
+  .description-project {
+    padding-left: 15px;
+    li {
+      list-style-type: disc;
+      padding: 10px 0px;
+      line-height: 22px;
+    }
+  }
+}
+
+.box-skills {
+  margin-bottom: 3rem;
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      background-color: #383b40;
+      padding: 5px 10px;
+      width: max-content;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.box-contact {
+  .infos {
+    display: flex;
+    flex-direction: row;
+
+    h3 {
+      margin-bottom: 0.9rem;
+      font-weight: 600;
+    }
+
+    .atuacao,
+    .contact {
+      background-color: #383b40;
+      padding: 1rem;
+      width: 50%;
+      margin: 0.5rem;
+      border-radius: 7px;
+
+      .icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1.2rem;
+        p {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 1.5rem 0;
+  p {
+    text-align: center;
+  }
 }
